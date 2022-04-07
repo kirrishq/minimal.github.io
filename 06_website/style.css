@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Montserrat", monospace;
+    font-size: 10px;
+    color: aliceblue;
+    background: #111;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.container-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.title {
+    margin-top: 150px;
+    padding: 10px;
+}
+.title h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #888;
+}
+.img-bg {
+    width: 100%;
+}
+
+/* Header Section */
+#header {
+    min-height: 60px;
+    border-bottom: 1px solid black;
+    margin-bottom: 60px;
+}
+#header .container-hero {
+    align-items: end;
+    min-height: 60px;
+}
+#header span {
+    color: lightseagreen;
+}
+.brand, .nav-list {
+    font-size: 1.3vh;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#header a {
+    padding: 10px;
+    transition: .1s all ease-in;
+}
+.nav-list li {
+    display: inline-block;
+}
+.nav-list a:hover {
+    text-decoration: line-through;
+    color: lightseagreen;
+}
+/* End Header Section */
+
+/* Hero Section */
+#hero .container-hero {
+    margin-bottom: 60px;
+}
+
+#hero .left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px;
+}
+#hero .title-hero h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#hero .button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 45px;
+}
+.hint-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.hint-wrapper p {
+    text-transform: lowercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.hint-wrapper .arrow-hero {
+    align-self: end;
+    margin-right: -20px;
+}
+
+#hero .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
+    width: 190px;
+    height: 55px;
+    transition: 1s;
+    z-index: 0;
+}
+#hero .button::before,
+#hero .button::after {
+    content: '';
+    position: absolute;
+    background: #111;
+    transition: 1s;
+    z-index: -1;
+}
+#hero .button::before {
+    width: 160px;
+    height: 55px;
+}
+#hero .button::after {
+    width: 190px;
+    height: 30px;
+}
+#hero .button:hover::before {
+    width: 0;
+    background: lightseagreen;
+}
+#hero .button:hover::after {
+    height: 0;
+    background: lightseagreen;
+}
+#hero .button:hover {
+    color: aliceblue;
+    background: lightseagreen;
+}
+
+#hero .right-col {
+    margin-right: 5px;
+}
+#hero .right-col .socials-hero {
+    display: flex;
+    flex-direction: column;
+}
+.socials-hero a {
+    padding: 5px;
+}
+.socials-hero a img {
+    width: 38px;
+    height: auto;
+    transition: .3s all ease-in;
+}
+.socials-hero a:hover img {
+    background: lightseagreen;
+    box-shadow: 0 0 5px lightseagreen, 0 0 25px lightseagreen,
+    0 0 50px lightseagreen, 0 0 200px lightseagreen;
+    border-radius: 30px;
+}
+/* End Hero Section */
+
+/* Projects Section */
+.logo-projects{
+    margin-bottom: 200px;
+}
+#projects h2 span{
+    color: lightseagreen;
+}
+#projects p span {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.project {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-bottom: 200px;
+}
+#projects h3 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#projects span {
+    color: lightseagreen;
+}
+.project-title-100 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -35%;
+    z-index: 1;
+}
+.project-title-100 p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: aliceblue;
+    align-self: end;
+    margin-bottom: 2px;
+}
+/* .project-title-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -50%;
+    z-index: 1;
+}
+.project-title-right p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: aliceblue;
+    align-self: end;
+    margin-bottom: 2px;
+}
+.project-title-left {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    position: absolute;
+    bottom: -50%;
+    z-index: 1;
+}
+.project-title-left p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: aliceblue;
+    align-self: end;
+    margin-bottom: 2px;
+} */
+.project a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.project h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -70%;
+    font-size: 20rem;
+    font-weight: 300;
+    color: #000;
+}
+.project .img-01 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(#111, #111),
+        url(./img/Blue-rock.jpg);
+    background-size: cover;
+    /* background-position: 50% 100%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+}
+.project .img-01:hover {
+    background-image: 
+    linear-gradient(transparent, transparent),
+    url(./img/Blue-rock.jpg);
+    background-blend-mode: normal;
+}
+/* .project .img-01:hover .number-bg-01 h4 {
+    color: lightseagreen;
+} */
+.project .img-02 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(#111, #111),
+        url(./img/Abstract-colors.jpg);
+    background-size: cover;
+    /* background-position: 50% 100%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+}
+.project .img-02:hover {
+    background-image: 
+    linear-gradient(transparent, transparent),
+    url(./img/Abstract-colors.jpg);
+    background-blend-mode: normal;
+}
+.project .img-03 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(#111, #111),
+        url(./img/Pink-wallpaper.jpg);
+    background-size: cover;
+    /* background-position: 50% 100%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+}
+.project .img-03:hover {
+    background-image: 
+    linear-gradient(transparent, transparent),
+    url(./img/Pink-wallpaper.jpg);
+    background-blend-mode: normal;
+}
+/* End Projects Section */
+
+/* About Section */
+.container-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#about h2 span{
+    color: lightseagreen;
+}
+#about p {
+    max-width: 1025px;
+}
+#about .step-circle {
+    width: fit-content;
+}
+#about .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#about .number h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #888;
+}
+/* End About Section */
+
+/* Contact Section */
+#contact h2 span{
+    color: lightseagreen;
+}
+#contact .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+#contact .contacts a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 10px;
+}
+#contact .contacts a:hover {
+    text-decoration: underline 2px lightseagreen;
+}
+/* End Contact Section */
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+#footer .socials {
+    align-items: start;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#footer .socials a{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 15px;
+    transition: .1s ease;
+}
+#footer .socials a:hover {
+    color: lightseagreen;
+    text-shadow: 0 0 5px lightseagreen, 0 0 25px lightseagreen,
+    0 0 50px lightseagreen, 0 0 200px lightseagreen;
+}
+#footer .logo {
+    width: auto;
+    height: auto;
+    margin-right: 60px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+#footer h2 {
+    font-size: 9.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.05);
+}
+#footer h2:hover {
+    opacity: .7;
+    text-shadow: 0 0 5px lightseagreen, 0 0 25px lightseagreen,
+    0 0 50px lightseagreen;
+}
+/* End Footer Section */
