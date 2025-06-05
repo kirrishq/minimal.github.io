@@ -211,10 +211,3 @@ mask:        radial-gradient(circle at 50% 100%, transparent 45%, black 45%)
 * {
   box-sizing: border-box;
 }
-
-body {
-  display: grid;
-  place-items: center;
-  height: 100dvh;
-  background: var(--surface);
-}
